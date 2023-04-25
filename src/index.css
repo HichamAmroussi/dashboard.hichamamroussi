@@ -1,0 +1,171 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 245, 238);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling */
+/* Home Page */
+.menu-container {
+  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-container .box-link {
+  color: #222222;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: rgb(253, 253, 253);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 110px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.menu-container .box-link i {
+  margin-top: 5px;
+}
+.menu-container .box-link .fa-pen-to-square {
+  margin-top: 2px;
+}
+.menu-container .box-link p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.menu-container .box-link:last-child p {
+  margin-top: 3px;
+}
+
+/* Inbox */
+.loader-container {
+  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 2rem auto;
+  max-width: 1120px;
+  width: 73%;
+  min-height: 89vh;
+}
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    margin: 1rem auto;
+    width: 95%;
+  }
+}
+
+main .message-container {
+  background-color: rgb(253, 253, 253);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 15px 0px;
+  padding: 3rem 3.8rem;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  main .message-container {
+    padding: 2.5rem 2.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .message-container {
+    padding: 1.8rem 2rem;
+    margin-bottom: 10px;
+  }
+}
+
+main .message-container .delete-msg {
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  color: rgb(253, 253, 253);
+  background-color: rgb(230, 105, 105);
+  padding: 0.6rem 0.8rem;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  main .message-container .delete-msg {
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+main .message-container div {
+  margin-bottom: 15px;
+}
+main .message-container div span {
+  font-weight: 700;
+  margin-right: 3px;
+}
+main .message-container div:nth-child(1) p,
+main .message-container div:nth-child(2) p {
+  display: inline;
+}
+main .message-container div:nth-child(3) {
+  white-space: pre-line;
+  line-height: 1.4;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+main .message-container p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Loading Animation */
+.loading-animation {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 6.2px solid #96D2E2;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  animation: spin 0.7s infinite ease;
+}
+@media screen and (max-width: 500px) {
+  .loading-animation {
+    width: 55px;
+    height: 55px;
+    border: 5.5px solid #96D2E2;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+}
+
+@keyframes spin { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
