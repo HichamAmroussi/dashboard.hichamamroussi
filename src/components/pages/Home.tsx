@@ -1,13 +1,19 @@
-import MenuBox from "../MenuBox";
+import Button from "../Button";
 
 function Home() {
   return (
-    <main className="menu-container">
-      <MenuBox title="Inbox" link="/inbox" icone="fa-envelope" />
-      <MenuBox
+    <main className="home-container">
+      <Button
+        title="Inbox"
+        link="/inbox"
+        style="box-link"
+        icone="fa-regular fa-envelope"
+      />
+      <Button
         title="Testimonial"
         link="/write-testimonial"
-        icone="fa-pen-to-square"
+        style="box-link"
+        icone="fa-regular fa-pen-to-square"
       />
     </main>
   );

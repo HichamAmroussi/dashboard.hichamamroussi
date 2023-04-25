@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+// Import Components
 import MessageCard from "../MessageCard";
+import Button from "../Button";
 
 function Inbox() {
   const [messages, setMessages] = useState<any[] | null>(null);
@@ -17,7 +19,13 @@ function Inbox() {
   }, []);
 
   return (
-    <main>
+    <main className="inbox-container">
+      <Button
+        title="Go Back"
+        link="/home"
+        style="go-back-btn"
+        icone="fa-solid fa-circle-arrow-left"
+      />
       {isPending && (
         <div className="loader-container">
           <div className="loading-animation"></div>

@@ -1,4 +1,4 @@
-/* Base Styles */
+/*-------------------------------- Base Styles --------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +6,21 @@
 }
 
 body {
-  background-color: rgb(247, 245, 238);
+  background-color: rgb(243, 241, 233);
   font-family: 'Roboto', sans-serif;
 }
 
 /* Styling */
-/* Home Page */
-.menu-container {
-  min-height: 89vh;
+/*-------------------------------- Home Page --------------------------------*/
+.home-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.menu-container .box-link {
+.home-container .box-link {
   color: #222222;
   text-decoration: none;
   font-size: 2rem;
@@ -36,21 +36,21 @@ body {
   align-items: center;
   gap: 6px;
 }
-.menu-container .box-link i {
+.home-container .box-link i {
   margin-top: 5px;
 }
-.menu-container .box-link .fa-pen-to-square {
+.home-container .box-link .fa-pen-to-square {
   margin-top: 2px;
 }
-.menu-container .box-link p {
+.home-container .box-link p {
   font-size: 0.8rem;
   font-weight: 500;
 }
-.menu-container .box-link:last-child p {
+.home-container .box-link:last-child p {
   margin-top: 3px;
 }
 
-/* Inbox */
+/*-------------------------------- Inbox Page --------------------------------*/
 .loader-container {
   min-height: 89vh;
   display: flex;
@@ -58,25 +58,49 @@ body {
   align-items: center;
 }
 
-main {
-  margin: 2rem auto;
+.inbox-container {
+  margin: 2.8rem auto;
   max-width: 1120px;
   width: 73%;
   min-height: 89vh;
 }
 @media screen and (max-width: 1200px) {
-  main {
+  .inbox-container {
     width: 90%;
   }
 }
 @media screen and (max-width: 500px) {
-  main {
-    margin: 1rem auto;
+  .inbox-container {
+    margin: 2.5rem auto;
     width: 95%;
   }
 }
 
-main .message-container {
+.go-back-btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #aaaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 12px;
+  top: 7px;
+}
+.go-back-btn p {
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 500px) {
+  .go-back-btn {
+    font-size: 1.1rem;
+    top: 4px;
+    left: 5px;
+    gap: 4px;
+  }
+}
+
+.inbox-container .message-container {
   background-color: rgb(253, 253, 253);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 15px 0px;
@@ -86,18 +110,18 @@ main .message-container {
   position: relative;
 }
 @media screen and (max-width: 1000px) {
-  main .message-container {
+  .inbox-container .message-container {
     padding: 2.5rem 2.4rem;
   }
 }
 @media screen and (max-width: 500px) {
-  main .message-container {
+  .inbox-container .message-container {
     padding: 1.8rem 2rem;
     margin-bottom: 10px;
   }
 }
 
-main .message-container .delete-msg {
+.inbox-container .message-container .delete-msg {
   font-size: 1.2rem;
   outline: none;
   border: none;
@@ -111,25 +135,25 @@ main .message-container .delete-msg {
   cursor: pointer;
 }
 @media screen and (max-width: 500px) {
-  main .message-container .delete-msg {
+  .inbox-container .message-container .delete-msg {
     font-size: 1rem;
     top: 10px;
     right: 10px;
   }
 }
 
-main .message-container div {
+.inbox-container .message-container div {
   margin-bottom: 15px;
 }
-main .message-container div span {
+.inbox-container .message-container div span {
   font-weight: 700;
   margin-right: 3px;
 }
-main .message-container div:nth-child(1) p,
-main .message-container div:nth-child(2) p {
+.inbox-container .message-container div:nth-child(1) p,
+.inbox-container .message-container div:nth-child(2) p {
   display: inline;
 }
-main .message-container div:nth-child(3) {
+.inbox-container .message-container div:nth-child(3) {
   white-space: pre-line;
   line-height: 1.4;
   margin-top: 30px;
@@ -139,12 +163,15 @@ main .message-container div:nth-child(3) {
   align-items: flex-start;
   gap: 9px;
 }
-main .message-container p {
+.inbox-container .message-container p {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Loading Animation */
+/*-------------------------------- Testimonial Page --------------------------------*/
+
+
+/*-------------------------------- Loading Animation --------------------------------*/
 .loading-animation {
   width: 60px;
   height: 60px;
