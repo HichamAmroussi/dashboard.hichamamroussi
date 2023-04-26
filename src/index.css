@@ -229,7 +229,9 @@ body {
   font-weight: 500;
 }
 .testimonial-container form input {
-  border: 1px solid rgb(180, 170, 159);
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid rgb(190, 181, 170);
   border-radius: 3px;
   outline: none;
   margin-bottom: 11px;
@@ -237,9 +239,10 @@ body {
 }
 .testimonial-container form textarea {
   font-family: inherit;
+  font-size: 1rem;
   line-height: 1.5;
   resize: none;
-  border: 1px solid rgb(180, 170, 159);
+  border: 1px solid rgb(190, 181, 170);
   border-radius: 3px;
   outline: none;
   margin-bottom: 11px;
