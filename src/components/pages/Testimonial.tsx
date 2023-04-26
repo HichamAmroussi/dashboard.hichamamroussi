@@ -22,6 +22,7 @@ function Testimonial() {
       body: JSON.stringify(testimonial),
     }).then(() => {
       setIsPending(false);
+      alert("Testimonial sent! Thank you.");
       navigate("/write-testimonial");
     });
   };
@@ -56,6 +57,7 @@ function Testimonial() {
         <label>Testimonial:</label>
         <textarea
           required
+          placeholder="Testimonial"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
