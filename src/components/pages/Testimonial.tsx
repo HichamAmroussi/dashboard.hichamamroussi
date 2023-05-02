@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 // Import Components
+import Popup from "../Popup";
 import Button from "../Button";
 
 function Testimonial() {
@@ -8,7 +8,7 @@ function Testimonial() {
   const [business, setBusiness] = useState("");
   const [body, setBody] = useState("");
   const [isPending, setIsPending] = useState(false);
-  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -22,13 +22,14 @@ function Testimonial() {
       body: JSON.stringify(testimonial),
     }).then(() => {
       setIsPending(false);
-      alert("Testimonial sent! Thank you.");
-      navigate("/write-testimonial");
+      setIsOpen(true);
     });
   };
 
   return (
     <main className="testimonial-container">
+      <Popup open={isOpen} onClose={() => setIsOpen(false)} />
+
       <Button
         title="Go Back"
         link="/home"
