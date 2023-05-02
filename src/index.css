@@ -21,7 +21,7 @@ body {
 }
 @media screen and (max-width: 1500px) {
   .home-container {
-    gap: 20px;
+    gap: 17px;
   }
 }
 
@@ -371,7 +371,7 @@ body {
 @media screen and (max-width: 1500px) {
   .popup-container .popup {
     padding: 2.4rem 1.7rem;
-    gap: 30px;
+    gap: 34px;
   }
 }
 
@@ -388,11 +388,10 @@ body {
 @media screen and (max-width: 1500px) {
   .popup-container .popup h1 {
     font-size: 1.1rem;
-    margin-top: 16px;
   }
   .popup-container .popup h1 span {
     font-size: 2rem;
-    margin-left: 10px;
+    margin-left: 6px;
   }
 }
 
