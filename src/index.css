@@ -58,6 +58,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.empty-inbox {
+  font-size: 1.6rem;
+  font-weight: 600;
+  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.empty-inbox span {
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+}
 
 .inbox-container {
   margin: 2.8rem auto;
@@ -186,9 +199,14 @@ body {
 
 /*-------------------------------- Testimonial Page --------------------------------*/
 .testimonial-container {
-  margin: 2.8rem auto;
-  max-width: 600px;
+  margin: 3.9rem auto;
+  max-width: 620px;
   width: 92%;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial-container {
+    margin: 2.8rem auto;
+  }
 }
 @media screen and (max-width: 500px) {
   .testimonial-container {
@@ -197,7 +215,12 @@ body {
 }
 
 .testimonial-container h2 {
-  margin: 1rem 0;
+  margin: 1.8rem 0;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial-container h2 {
+    margin: 1rem 0;
+  }
 }
 @media screen and (max-width: 500px) {
   .testimonial-container h2 {
@@ -209,10 +232,15 @@ body {
   background-color: rgb(253, 253, 253);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px 0px;
-  padding: 2rem 3rem;
+  padding: 2.8rem 3.2rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial-container form {
+    padding: 2rem 3rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .testimonial-container form {
@@ -229,8 +257,13 @@ body {
   border: 1px solid rgb(190, 181, 170);
   border-radius: 3px;
   outline: none;
-  margin-bottom: 11px;
+  margin-bottom: 18px;
   padding: 0.75rem 0.9rem;
+}
+@media screen and (max-width: 500px) {
+  .testimonial-container form input {
+    margin-bottom: 11px;
+  }
 }
 @media screen and (max-width: 500px) {
   .testimonial-container form input {
@@ -245,9 +278,15 @@ body {
   border: 1px solid rgb(190, 181, 170);
   border-radius: 3px;
   outline: none;
-  margin-bottom: 11px;
+  margin-bottom: 20px;
   padding: 0.75rem 0.9rem;
-  min-height: 150px;
+  min-height: 225px;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial-container form textarea {
+    min-height: 150px;
+    margin-bottom: 11px;
+  }
 }
 @media screen and (max-width: 500px) {
   .testimonial-container form textarea {
@@ -255,14 +294,22 @@ body {
     min-height: 200px;
   }
 }
+
 .testimonial-container form button {
   background-color: #222222;
   border: none;
   border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
   color: #fff;
-  padding: 0.7rem 0;
+  padding: 1rem 0;
   margin: 0.5rem 0;
   cursor: pointer;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial-container form button {
+    padding: 0.7rem 0;
+  }
 }
 
 /*-------------------------------- Loading Animation --------------------------------*/

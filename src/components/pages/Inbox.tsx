@@ -33,6 +33,7 @@ function Inbox() {
       )}
 
       {messages &&
+        messages.length !== 0 &&
         messages.map((message) => (
           <MessageCard
             message={message}
@@ -41,6 +42,12 @@ function Inbox() {
             key={message._id}
           />
         ))}
+
+      {messages && messages.length === 0 && (
+        <div className="empty-inbox">
+          Inbox Empty <span>📭</span>
+        </div>
+      )}
     </main>
   );
 }
