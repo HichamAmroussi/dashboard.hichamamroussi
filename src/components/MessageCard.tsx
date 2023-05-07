@@ -48,7 +48,7 @@ function MessageCard({ message, messages, setMessages }: MessageProps) {
         <span>Name:</span> <p>{message.name}</p>
       </div>
       <div>
-        <span>E-mail:</span> <p>{message.email}</p>
+        <span>E-mail or WhatsApp:</span> <p>{message.email}</p>
       </div>
       <div>
         <span>Message:</span> <p>{message.message}</p>
