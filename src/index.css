@@ -93,7 +93,6 @@ body {
   margin: 2.8rem auto;
   max-width: 1120px;
   width: 73%;
-  min-height: 89vh;
 }
 @media screen and (max-width: 1200px) {
   .inbox-container {
