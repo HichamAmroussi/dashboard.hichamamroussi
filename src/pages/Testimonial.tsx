@@ -1,7 +1,7 @@
 import { useState } from "react";
 // Import Components
-import Popup from "../Popup";
-import Button from "../Button";
+import Popup from "../components/Popup";
+import Button from "../components//Button";
 
 function Testimonial() {
   const [name, setName] = useState("");

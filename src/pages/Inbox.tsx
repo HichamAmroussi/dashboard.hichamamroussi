@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // Import Components
-import MessageCard from "../MessageCard";
-import Button from "../Button";
+import MessageCard from "../components/MessageCard";
+import Button from "../components/Button";
 
 function Inbox() {
   const [messages, setMessages] = useState<any[] | null>(null);

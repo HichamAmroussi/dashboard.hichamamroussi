@@ -1,9 +1,9 @@
 // Import Packages
 import { Route, Routes } from "react-router-dom";
 // Import Components
-import Home from "./components/pages/Home";
-import Inbox from "./components/pages/Inbox";
-import Testimonial from "./components/pages/Testimonial";
+import Home from "./pages/Home";
+import Inbox from "./pages/Inbox";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
