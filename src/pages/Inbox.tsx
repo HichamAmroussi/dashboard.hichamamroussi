@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// Import Components
+// Components
 import MessageCard from "../components/MessageCard";
 import Button from "../components/Button";
 

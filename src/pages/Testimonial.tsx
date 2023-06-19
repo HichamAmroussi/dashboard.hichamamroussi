@@ -1,5 +1,5 @@
 import { useState } from "react";
-// Import Components
+// Components
 import Popup from "../components/Popup";
 import Button from "../components//Button";
 

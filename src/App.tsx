@@ -1,6 +1,6 @@
-// Import Packages
+// Packages
 import { Route, Routes } from "react-router-dom";
-// Import Components
+// Components
 import Home from "./pages/Home";
 import Inbox from "./pages/Inbox";
 import Testimonial from "./pages/Testimonial";
