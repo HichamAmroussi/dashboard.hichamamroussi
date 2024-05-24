@@ -8,7 +8,7 @@ function Inbox() {
   const [isPending, setIsPending] = useState(true);
 
   useEffect(() => {
-    fetch("https://ha-portfolio-api.cyclic.app/inbox")
+    fetch("https://my-portfolio-api-hxj1.onrender.com/inbox")
       .then((data) => data.json())
       .then((response) => {
         // Remove Loading Animation

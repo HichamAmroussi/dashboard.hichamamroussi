@@ -16,7 +16,7 @@ function Testimonial() {
 
     setIsPending(true);
 
-    fetch("https://ha-portfolio-api.cyclic.app/testimonial", {
+    fetch("https://my-portfolio-api-hxj1.onrender.com/testimonial", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(testimonial),
