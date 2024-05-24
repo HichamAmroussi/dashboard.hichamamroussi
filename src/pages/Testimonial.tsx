@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // Components
 import Popup from "../components/Popup";
 import Button from "../components//Button";
 
 function Testimonial() {
+  const [testimonials, setTestimonials] = useState<any[] | null>(null);
   const [name, setName] = useState("");
   const [business, setBusiness] = useState("");
   const [body, setBody] = useState("");
@@ -25,6 +26,15 @@ function Testimonial() {
       setIsOpen(true);
     });
   };
+
+  useEffect(() => {
+    fetch("https://my-portfolio-api-hxj1.onrender.com/testimonial")
+      .then((data) => data.json())
+      .then((response) => {
+        // Change Messages State
+        setTestimonials(response.testimonials);
+      });
+  }, []);
 
   return (
     <main className="testimonial-container">
