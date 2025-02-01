@@ -2,14 +2,14 @@ interface MessageProps {
   message: {
     _id: number;
     name: string;
-    email: string;
+    contact: string;
     message: string;
     createdAt: string;
   };
   messages: {
     _id: number;
     name: string;
-    email: string;
+    contact: string;
     message: string;
     createdAt: string;
   }[];
@@ -17,7 +17,7 @@ interface MessageProps {
     item: {
       _id: number;
       name: string;
-      email: string;
+      contact: string;
       message: string;
       createdAt: string;
     }[]
