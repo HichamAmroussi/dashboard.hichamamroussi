@@ -27,7 +27,7 @@ interface MessageProps {
 function MessageCard({ message, messages, setMessages }: MessageProps) {
   // Event Handlers
   const deleteMessage = () => {
-    fetch(`https://ha-portfolio-api.cyclic.app/inbox/${message._id}`, {
+    fetch(`https://my-portfolio-api-hxj1.onrender.com/inbox/${message._id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
